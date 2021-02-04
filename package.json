@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "cross-env NODE_ENV=testing npx sandbox"
+  },
+  "arc": {
+    "app": "begin-app",
+    "http": [
+      {"/*": {"method": "any", "src": "."}}
+    ]
+  },
+  "devDependencies": {
+    "@architect/sandbox": "^3.3.6",
+    "cross-env": "^7.0.3"
+  }
+}
